@@ -1,0 +1,97 @@
+########################•########################
+"""                  IMPORTS                  """
+########################•########################
+
+import bpy
+import gpu
+import blf
+import bmesh
+import sys
+import os
+import math
+import time
+import uuid
+import gc
+from bl_math import clamp, lerp, smoothstep
+from mathutils import Color, Euler, Matrix, Quaternion, Vector
+from mathutils.geometry import *
+from mathutils.kdtree import KDTree
+from mathutils.bvhtree import BVHTree
+from mathutils.noise import *
+from bpy_extras.view3d_utils import *
+from gpu_extras.batch import batch_for_shader
+import PolyOps
+
+########################•########################
+"""                 CONSTANTS                 """
+########################•########################
+
+context = bpy.context
+
+VEC3_ZERO = Vector((0,0,0))
+VEC3_ONE = Vector((1,1,1))
+VEC3_LEFT = Vector((-1,0,0))
+VEC3_RIGHT = Vector((1,0,0))
+VEC3_FRONT = Vector((0,1,0))
+VEC3_BACK = Vector((0,-1,0))
+VEC3_UP = Vector((0,0,1))
+VEC3_DOWN = Vector((0,0,-1))
+
+########################•########################
+"""                   RAZOR                   """
+########################•########################
+
+razor = bpy.context.scene.razor
+settings = razor.settings
+ops = razor.ops
+workplanes = razor.workplanes
+sketches = razor.sketches
+features = razor.features
+
+razor = bpy.context.scene.razor
+sketch = razor.new_sketch(name="", set_active=True)
+entity = sketch.new_entity(shape='POINT')
+
+########################•########################
+"""                    TEST                   """
+########################•########################
+
+import tracemalloc
+from timeit import timeit
+
+ITER_MEM  = 100
+ITER_TIME = 1000
+
+def func_1():
+    pass
+
+def func_2():
+    pass
+
+def measure(func):
+    bits = 0
+    for i in range(ITER_MEM):
+        tracemalloc.reset_peak()
+        tracemalloc.start()
+        func()
+        current, peak = tracemalloc.get_traced_memory()
+        tracemalloc.stop()
+        bits += peak
+    return int(bits / ITER_MEM)
+
+def print_results(i, b, t):
+    kb = b / 1024
+    mb = kb / 1024
+    gb = mb / 1024
+    print(f"| {i:>10} | {int(b):>10,} | {kb:>10,.3f} | {mb:>10.3f} | {gb:>10.6f} | {t:>10,.6f} | {ITER_TIME:>10,} |")
+
+M1 = measure(func_1)
+M2 = measure(func_2)
+T1 = timeit(func_1, number=ITER_TIME)
+T2 = timeit(func_2, number=ITER_TIME)
+
+print(f"|{'-'*90}|")
+print(f"| {'Function':^10} | {'Bytes':^10} | {'KB':^10} | {'MB':^10} | {'GB':^10} | {'Time':^10} | {'Iterations':^10} |")
+print(f"|{'-'*90}|")
+print_results(i=1, b=M1, t=T1)
+print_results(i=2, b=M2, t=T2)

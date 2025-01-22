@@ -1,0 +1,32 @@
+
+# -------------------------------------------------------- #
+# ------------------------ VECTOR ------------------------ #
+# -------------------------------------------------------- #
+
+DIRECTION
+    - To make a normal that goes from A to B
+        (B - A).normalized()
+
+NORMALIZING
+
+    Calling normalized means that the length of a Vector will be 1
+        - abs(Vec.X) + abs(Vec.Y) + abs(Vec.Z) == 1
+
+# -------------------------------------------------------- #
+# ------------------------ MATRIX ------------------------ #
+# -------------------------------------------------------- #
+
+The rotation vectors are equal to the rows:
+    x_vector = [0][0], [0][1], [0][2]
+    y_vector = [1][0], [1][1], [1][2]
+    z_vector = [2][0], [2][1], [2][2]
+
+# -------------------------------------------------------- #
+# ---------------------- TRANSPOSED ---------------------- #
+# -------------------------------------------------------- #
+
+Mostyl for transforming normals between different spaces
+Obtained from a matrix
+The scale and location in the transposed are not meaningful on their own
+Its the first 3x3 portion of the workd matrix that has value after transposing
+
