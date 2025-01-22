@@ -214,9 +214,9 @@ def register_addon():
     for cls in classes:
         register_class(cls)
 
-    # Razor
-    from . import razor
-    razor.register()
+    # # Razor
+    # from . import razor
+    # razor.register()
 
     # Post Handles
     load_post_append()
@@ -243,9 +243,9 @@ def register_addon():
 
 def unregister_addon():
 
-    # Razor
-    from . import razor
-    razor.unregister()
+    # # Razor
+    # from . import razor
+    # razor.unregister()
 
     # Handles
     load_post_remove()
