@@ -2,9 +2,6 @@
 """                   KodoPy                  """
 ########################•########################
 
-POLY_OPS_VERSION = (1, 0)
-RAZOR_VERSION = (1, 0)
-
 bl_info = {
     "name": "PolyOps",
     "description": "Blender Workflow Utilities",

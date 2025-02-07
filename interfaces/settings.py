@@ -71,7 +71,7 @@ class PS_OT_SettingsPopup(bpy.types.Operator):
     def draw(self, context):
         layout = self.layout
         row = layout.row(align=True)
-        row.label(text=f"PolyOps {version()[0]}.{version()[1]}")
+        row.label(text=version(as_label=True))
         row = layout.row(align=True)
         row.prop(self, 'popup_tabs', expand=True)
 

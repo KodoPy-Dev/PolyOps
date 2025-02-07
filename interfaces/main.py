@@ -8,7 +8,7 @@ from ..utils.addon import version, user_prefs
 
 class PS_MT_MainMenu(bpy.types.Menu):
     bl_idname = "PS_MT_MainMenu"
-    bl_label = version(opt='POLY_OPS', as_label=True)
+    bl_label = version(as_label=True)
 
 
     def draw(self, context):

@@ -17,19 +17,9 @@ def exists(name=""):
     return False
 
 
-def version(opt='POLY_OPS', as_label=False):
-    if opt == 'POLY_OPS':
-        from .. import POLY_OPS_VERSION
-        if as_label:
-            return f"PolyOps {POLY_OPS_VERSION[0]}.{POLY_OPS_VERSION[1]}"
-        else:
-            return POLY_OPS_VERSION
-    elif opt == 'RAZOR':
-        from .. import RAZOR_VERSION
-        if as_label:
-            return f"Razor -{RAZOR_VERSION[0]}.{RAZOR_VERSION[1]}"
-        else:
-            return RAZOR_VERSION
+def version(as_label=False):
+    from .. import bl_info
+    version = bl_info['version']
     if as_label:
-        return ''
-    return 0
+        return f"PolyOps {version[0]}.{version[1]}"
+    return version
