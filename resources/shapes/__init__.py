@@ -2,11 +2,8 @@
 """                   KodoPy                  """
 ########################•########################
 
-import bpy
-import bmesh
 import json
 import os
-from math import cos, sin, radians
 from mathutils import geometry, Vector, Matrix, Euler, Quaternion
 
 
