@@ -42,25 +42,8 @@ OPERATORS_OBJECT_MODE = [
     ('COL_MAR', 'VERTEXSEL'  , 'ps.vert_mark'),
 ]
 
-OPERATORS_RAZOR = [
-    # Razor
-    ('COL_RAZ', 'SETTINGS'  , 'ps.razor_popup'),
-    # Select
-    ('COL_SEL', 'MOD_BOOLEAN', 'ps.select_booleans'),
-    # Edit
-    ('COL_EDI', 'MESH_GRID'   , 'ps.clean_mesh'),
-    ('COL_EDI', 'MOD_BEVEL'   , 'ps.bevel'),
-    ('COL_EDI', 'MOD_SOLIDIFY', 'ps.solidify'),
-    # Mark
-    ('COL_MAR', 'MESH_CUBE', 'ps.obj_shade'),
-    ('COL_MAR', 'EDGESEL'  , 'ps.edge_mark'),
-]
 
 def get_operators(context):
-    # razor = context.scene.razor
-    # if razor.is_tool_active():
-    #     global OPERATORS_RAZOR
-    #     return OPERATORS_RAZOR
     if context.mode == 'EDIT_MESH':
         global OPERATORS_EDIT_MODE
         return OPERATORS_EDIT_MODE
@@ -139,9 +122,6 @@ class PS_GIZMO_HUD(bpy.types.GizmoGroup):
 
 
     def refresh(self, context):
-        # self.razor = context.scene.razor
-        # self.razor_tool_active_state = self.razor.is_tool_active()
-
         self.mode = context.mode
         self.gizmos.clear()
         icon_scale = get_icon_scale()
@@ -173,19 +153,11 @@ class PS_GIZMO_HUD(bpy.types.GizmoGroup):
 
 
     def draw_prepare(self, context):
-        # if self.razor.ops.active:
-        #     for gizmo in self.gizmos:
-        #         gizmo.hide = True
-        #     return
-
         if PS_GIZMO_HUD.RECALC:
             PS_GIZMO_HUD.RECALC = False
             self.setup(context)
         if self.mode != context.mode:
             self.setup(context)
-
-        # if self.razor_tool_active_state != self.razor.is_tool_active():
-        #     self.setup(context)
 
         icon_scale = get_icon_scale()
         icon_offset = get_icon_offset()

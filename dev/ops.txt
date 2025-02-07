@@ -4,554 +4,554 @@
 
 # -------------------- ERRORS -------------------- #
 
-[None]
+    [None]
 
 # -------------------- TODO -------------------- #
 
-[Razor]
-    Redesign
+    [Razor]
+        Redesign
 
-[YouTube|Gumroad]
-    Gumroad PolyOps Banner
-        - Images should be horizontal, at least 1280x720px, and 72 DPI (dots per inch).
-    Logo
-        - KodoPy | PolyOps
-    PolyOps
-        - Single video with timestamps
-        - Publish to GM
+    [YouTube|Gumroad]
+        Gumroad PolyOps Banner
+            - Images should be horizontal, at least 1280x720px, and 72 DPI (dots per inch).
+        Logo
+            - KodoPy | PolyOps
+        PolyOps
+            - Single video with timestamps
+            - Publish to GM
 
 # -------------------- R&D -------------------- #
 
-[HUD]
-    A single Gizmo that draws in Screen Space
-    Draw icons with geometry
-    Make an in depth fully integrated system that bypasses the need for the Q menu
-    Maybe design it with a Grid like layout
-        - Take the viewport size and divide it into squares
-        - The HUD customizer will allow putting icons at an anchored position from the out most square
+    [HUD]
+        A single Gizmo that draws in Screen Space
+        Draw icons with geometry
+        Make an in depth fully integrated system that bypasses the need for the Q menu
+        Maybe design it with a Grid like layout
+            - Take the viewport size and divide it into squares
+            - The HUD customizer will allow putting icons at an anchored position from the out most square
 
-[Gizmos]
-    Raycasting method
-        gizmo = self.gizmos.new('GIZMO_GT_snap_3d')
+    [Gizmos]
+        Raycasting method
+            gizmo = self.gizmos.new('GIZMO_GT_snap_3d')
 
-[Geo-Nodes]
-    See if there is a way to draw graphical debug feedback for math nodes
+    [Geo-Nodes]
+        See if there is a way to draw graphical debug feedback for math nodes
 
-[Mod-Menu]
-    Drag and Drop
-    Sorting
-    Filtering
+    [Mod-Menu]
+        Drag and Drop
+        Sorting
+        Filtering
 
-[UX-Grid]
-    System that defines rows and columns
-    Define cell clusters graphicaly and by event blocks
+    [UX-Grid]
+        System that defines rows and columns
+        Define cell clusters graphicaly and by event blocks
 
 # -------------------- PY-UTILS -------------------- #
 
-[Modal-UX]
-    Geometry based icons
+    [Modal-UX]
+        Geometry based icons
 
-[Modal-Labels]
-    PolyOps Icon
+    [Modal-Labels]
+        PolyOps Icon
 
-[Notifications]
-    At the end (Make a scissor box and close it from top to bottom with white line)
+    [Notifications]
+        At the end (Make a scissor box and close it from top to bottom with white line)
 
 # -------------------- B3D -------------------- #
 
-[Object Mode -- Alt R]( X )
-    • Convert hotkey for clear rotation to popup menu (Clear Rot | Align to View)
+    [Object Mode -- Alt R]( X )
+        • Convert hotkey for clear rotation to popup menu (Clear Rot | Align to View)
 
 # -------------------- MESH -------------------- #
 
-[Select-Boundary]( V-1 )
-    • Select the boundary edges of faces and edges
-    *V2*
-    Material Borders
-    UV Borders
-    Vertex group borders
-    Object mode silhouette
+    [Select-Boundary]( V-1 )
+        • Select the boundary edges of faces and edges
+        *V2*
+        Material Borders
+        UV Borders
+        Vertex group borders
+        Object mode silhouette
 
-[Slice-&-Knife]( V-1 )
-    • Line Cutting Tool
-    *V2*
-    - Knife
-        - Only cut point to point
-    - Curve support
-    - Cut Modes
-        - Split
-        - Seperate
-    - Move to Edge Percent Snaps
-        - Removes the need for Vert / Edge / Center Edge Controls
-    - Investigate Knife for Blender / Maya
-    - Offer 3D angle snaps
+    [Slice-&-Knife]( V-1 )
+        • Line Cutting Tool
+        *V2*
+        - Knife
+            - Only cut point to point
+        - Curve support
+        - Cut Modes
+            - Split
+            - Seperate
+        - Move to Edge Percent Snaps
+            - Removes the need for Vert / Edge / Center Edge Controls
+        - Investigate Knife for Blender / Maya
+        - Offer 3D angle snaps
 
-[Select-Axis]( V-1 )
-    • Select mesh components by axeses
-    *V2*
-    - Global Axis
+    [Select-Axis]( V-1 )
+        • Select mesh components by axeses
+        *V2*
+        - Global Axis
 
-[E-Mark]( V-1 )
-    • Mark edges with sharp, crease, seam, b-weight
+    [E-Mark]( V-1 )
+        • Mark edges with sharp, crease, seam, b-weight
 
-[Sharp-Bevel]( V-1 )
-    • A preset mesh edit bevel to have a profile of 1
+    [Sharp-Bevel]( V-1 )
+        • A preset mesh edit bevel to have a profile of 1
 
-[V-Mark]( V-1 )
-    • Mark verts with vertex crease
+    [V-Mark]( V-1 )
+        • Mark verts with vertex crease
 
-[Select-Marks]( V-1 )
-    • Select the various edge and vert mark types
+    [Select-Marks]( V-1 )
+        • Select the various edge and vert mark types
 
-[Clean-Mesh]( V-1 )
-    • Clean mesh geometry with various ops
-    *V2*
-        - Preserve Quads
-        - Preserve material borders
-        - ALT (Concave) https://docs.blender.org/api/current/bmesh.ops.html#bmesh.ops.connect_verts_concave
+    [Clean-Mesh]( V-1 )
+        • Clean mesh geometry with various ops
+        *V2*
+            - Preserve Quads
+            - Preserve material borders
+            - ALT (Concave) https://docs.blender.org/api/current/bmesh.ops.html#bmesh.ops.connect_verts_concave
 
-[Loop-Select]( V-1 )
-    • Trace selected edges by angle and step limit
-    *V2*
-    - Face loops
-    - Connected planar faces
-    - Seleect Bevel (Get the parallel edges)
+    [Loop-Select]( V-1 )
+        • Trace selected edges by angle and step limit
+        *V2*
+        - Face loops
+        - Connected planar faces
+        - Seleect Bevel (Get the parallel edges)
 
-[Flatten]( V-1 )
-    • Flatten geometry
+    [Flatten]( V-1 )
+        • Flatten geometry
 
-[Join]( V-1 )
-    • Quickly knife two verts like the J-Key
-    *V2*
-    - Face Point Split
-    - Second point option to be straight across, use face tangent, use world axis
-    - Project verts across mesh (Requires preselection)
+    [Join]( V-1 )
+        • Quickly knife two verts like the J-Key
+        *V2*
+        - Face Point Split
+        - Second point option to be straight across, use face tangent, use world axis
+        - Project verts across mesh (Requires preselection)
 
-[Merge]( V-1 )
-    • Quickly weld verts together by click dragging to increase threshold
-    *V2*
-    - Only Selected
-    - Preserve Borders
-    - Face Collapse Mode
-    - Vert to Vert Mode
+    [Merge]( V-1 )
+        • Quickly weld verts together by click dragging to increase threshold
+        *V2*
+        - Only Selected
+        - Preserve Borders
+        - Face Collapse Mode
+        - Vert to Vert Mode
 
-[BLoop]( V-1 )
-    • Bisect the mesh from (Edge, Vert)
-    • Various angle options
-    *V2*
-    - Vert to Vert
+    [BLoop]( V-1 )
+        • Bisect the mesh from (Edge, Vert)
+        • Various angle options
+        *V2*
+        - Vert to Vert
 
-[Poly-Debug]( V-1 )
-    • Register shader on the selected mesh and update from deps change to draw tri-quad-ngons with a color
-    *V2*
-    - Object mode solution
-    - Possible analyzer system that can be monitored for useless update cycles
+    [Poly-Debug]( V-1 )
+        • Register shader on the selected mesh and update from deps change to draw tri-quad-ngons with a color
+        *V2*
+        - Object mode solution
+        - Possible analyzer system that can be monitored for useless update cycles
 
-[Dissolve]( V-1 )
-    • Quickly click verts or edges to dissolve them
+    [Dissolve]( V-1 )
+        • Quickly click verts or edges to dissolve them
 
-[Reduce]( X )
-    • Cleans edge chains by dissolving iso verts on chain and merging verts to left or right sides
-    **UPDATE**
-    - Reduce broke, check blend file for reduce error 001
-        (It doesnt know what side to pick for the flip option)
-        *NOTE*
-            - To fix this (tag) side a faces on invoke
-            - Remove everything from the bmesh editor and start with just a single backup, later in geo pen add the save and undo features
+    [Reduce]( X )
+        • Cleans edge chains by dissolving iso verts on chain and merging verts to left or right sides
+        **UPDATE**
+        - Reduce broke, check blend file for reduce error 001
+            (It doesnt know what side to pick for the flip option)
+            *NOTE*
+                - To fix this (tag) side a faces on invoke
+                - Remove everything from the bmesh editor and start with just a single backup, later in geo pen add the save and undo features
 
-[Project]( X )
-    • Draw out a plane and project selected geo to it
+    [Project]( X )
+        • Draw out a plane and project selected geo to it
 
-[Edge-Rot]( X )
-    • Click and edge or two verts, then rotate selected geo around line (Like setting the cursor there and then having to change orientation to cursor)
-    • Optionaly pick side and rotate but split at edges and extrude
+    [Edge-Rot]( X )
+        • Click and edge or two verts, then rotate selected geo around line (Like setting the cursor there and then having to change orientation to cursor)
+        • Optionaly pick side and rotate but split at edges and extrude
 
-[Poly-Push]( X )
-    • Push pull behavior from selection
+    [Poly-Push]( X )
+        • Push pull behavior from selection
 
-[Circle]( X )
-    • Create circles in mesh from selection
+    [Circle]( X )
+        • Create circles in mesh from selection
 
-[Offset]( X )
-    • Offset geo like cad
+    [Offset]( X )
+        • Offset geo like cad
 
-[Set-Origin]( X )
-    • Modal to pick face and drag to set origin
+    [Set-Origin]( X )
+        • Modal to pick face and drag to set origin
 
-[Resurface]( X )
-    • Mesh slicing system allowing for XYZ cut planes and boxelization
-    • Allows for slicing from view and mesh topology replacement
+    [Resurface]( X )
+        • Mesh slicing system allowing for XYZ cut planes and boxelization
+        • Allows for slicing from view and mesh topology replacement
 
-[Line-Snap]( X )
-    • Draw a (line / curve) in 3D or 2D space and align the vertices underneath
+    [Line-Snap]( X )
+        • Draw a (line / curve) in 3D or 2D space and align the vertices underneath
 
-[Voronoi-Divide]( X )
-    • Divide selected faces to match a voronoi pattern
+    [Voronoi-Divide]( X )
+        • Divide selected faces to match a voronoi pattern
 
-[V-Group-Editor]( X )
-    • View the vertex groups by scrolling
-    • Tools
-        - List objects with ref to v-group
-        - Flood / Clear / Del / Invert / Sync to Value
-        - Slider for Add / Sub
+    [V-Group-Editor]( X )
+        • View the vertex groups by scrolling
+        • Tools
+            - List objects with ref to v-group
+            - Flood / Clear / Del / Invert / Sync to Value
+            - Slider for Add / Sub
 
-[Primal]( X )
-    • Create 3D lines with dots at the ends
-    • Move the dots with a transform Gizmo system
-    • Selecting the line or dot, popup dialog for the primitave to fill with
-    • Key S - Show Bounding Box and allow click drag to scale
+    [Primal]( X )
+        • Create 3D lines with dots at the ends
+        • Move the dots with a transform Gizmo system
+        • Selecting the line or dot, popup dialog for the primitave to fill with
+        • Key S - Show Bounding Box and allow click drag to scale
 
-[Sculpt-Strips]( X )
-    • Draw out curves or lines along a mesh to then snap geometry to that line. Like H-Polish on a sculpt.
+    [Sculpt-Strips]( X )
+        • Draw out curves or lines along a mesh to then snap geometry to that line. Like H-Polish on a sculpt.
 
-[Reshape]( X )
-    • Taper | Stretch | Twist
-    • 3D Mode
-        - Puts lattice around mesh and allows for easy handle controls
-    • 2D Mode
-        - Put a lattice around the mesh aligned to the view and then use the projected points on the screen to control it
+    [Reshape]( X )
+        • Taper | Stretch | Twist
+        • 3D Mode
+            - Puts lattice around mesh and allows for easy handle controls
+        • 2D Mode
+            - Put a lattice around the mesh aligned to the view and then use the projected points on the screen to control it
 
-[Rebevel]( X )
-    • From selection calculate bevel chain and allow for bevel width adjustment letting zero be removal and greater values being width
+    [Rebevel]( X )
+        • From selection calculate bevel chain and allow for bevel width adjustment letting zero be removal and greater values being width
 
-[Span]( X )
-    • Take selection and allow for dragging down edge to fan out the bevel
+    [Span]( X )
+        • Take selection and allow for dragging down edge to fan out the bevel
 
-[Connect]( X )
-    • From selected geo and mouse direction across mesh, solve where to connect verts to cutting new edges into faces
+    [Connect]( X )
+        • From selected geo and mouse direction across mesh, solve where to connect verts to cutting new edges into faces
 
-[Wedge]( X )
-    • Mouse over edges and once selected allow drawing out wedge shape into edge cutting into faces
+    [Wedge]( X )
+        • Mouse over edges and once selected allow drawing out wedge shape into edge cutting into faces
 
-[Borderline]( X )
-    • Take edge chain and do offset cut
+    [Borderline]( X )
+        • Take edge chain and do offset cut
 
-[Satellite]( X )
-    • Creates a saddle shape boolean to cut selection allowing side to cut from
+    [Satellite]( X )
+        • Creates a saddle shape boolean to cut selection allowing side to cut from
 
-[Extract]( X )
-    • Modal to select geoemtry from evaluated mesh
+    [Extract]( X )
+        • Modal to select geoemtry from evaluated mesh
 
-[Circle-Project]( X )
-    • Quickly cut a circle projection into a mesh from view
+    [Circle-Project]( X )
+        • Quickly cut a circle projection into a mesh from view
 
-[GeoPen]( X )
-    • System for handling fast topology formation
-    • Loop ring extrude
-    • loop extrude
-    • Quad pen like system
+    [GeoPen]( X )
+        • System for handling fast topology formation
+        • Loop ring extrude
+        • loop extrude
+        • Quad pen like system
 
 # -------------------- OBJECT & UTILS -------------------- #
 
-[Select-Object]( V-1 )
-    • Object selection options
+    [Select-Object]( V-1 )
+        • Object selection options
 
-[Select-Booleans]( V-1 )
-    • Select modal for booleans
+    [Select-Booleans]( V-1 )
+        • Select modal for booleans
 
-[Object-Display]( V-1 )
-    • Solid / Wire
+    [Object-Display]( V-1 )
+        • Solid / Wire
 
-[Poly-Analyze]( X )
-    • Modal to show object normals | Option to show evaluated
-    • Works for Curves | Meshes | Meta | Surface
+    [Poly-Analyze]( X )
+        • Modal to show object normals | Option to show evaluated
+        • Works for Curves | Meshes | Meta | Surface
 
-[Recursive-Copy]( X )
-    • Recursively copy object and associated objects from modifiers and child objects
+    [Recursive-Copy]( X )
+        • Recursively copy object and associated objects from modifiers and child objects
 
-[Shape-Fill]( X )
-    • Make BB around selection and put primitive shape within it or custom shape
+    [Shape-Fill]( X )
+        • Make BB around selection and put primitive shape within it or custom shape
 
-[Align]( X )
-    • From selection draw out lines to create the transformation
+    [Align]( X )
+        • From selection draw out lines to create the transformation
 
-[View-Align]( X )
-    • Ray cast and align to the view to the face allowing for view rotation by drawing line with snapping to verts
+    [View-Align]( X )
+        • Ray cast and align to the view to the face allowing for view rotation by drawing line with snapping to verts
 
-[Notes]( X )
-    - Modal tool that can draw in screen space and leaves the shaders running
-    - Layers with Colors
-    - Line, Rectangle, Circle, Dot, Polyline, Text
+    [Notes]( X )
+        - Modal tool that can draw in screen space and leaves the shaders running
+        - Layers with Colors
+        - Line, Rectangle, Circle, Dot, Polyline, Text
 
 # -------------------- MODIFIERS -------------------- #
 
-[Shade]( V-1 )
-    • Setup shading with weighted normal, auto smooth modifier, set smooth on polys
-    • (Shift) Remove shading mods and set polygons to flat
+    [Shade]( V-1 )
+        • Setup shading with weighted normal, auto smooth modifier, set smooth on polys
+        • (Shift) Remove shading mods and set polygons to flat
 
-[Mirror-&-Weld]( V-1 )
-    • Mirror Gizmo System
-    *V2*
-        - Mirror from Geom (Plane co / normal from selected geo)
-        - Curve support
-        - Meta Support
-        - Show BB section (the portion being mirrored) as wire, the closer to radial exit the more the colors / position lerps towards exit axis (Make util)
-        - View Mirror
+    [Mirror-&-Weld]( V-1 )
+        • Mirror Gizmo System
+        *V2*
+            - Mirror from Geom (Plane co / normal from selected geo)
+            - Curve support
+            - Meta Support
+            - Show BB section (the portion being mirrored) as wire, the closer to radial exit the more the colors / position lerps towards exit axis (Make util)
+            - View Mirror
 
-[Deform-Mod]( V-1 )
-    • Adjust simple deform modifier
+    [Deform-Mod]( V-1 )
+        • Adjust simple deform modifier
 
-[Bevel-Mod]( V-1 )
-    • Adjust bevel modifier
+    [Bevel-Mod]( V-1 )
+        • Adjust bevel modifier
 
-[Solidify-Mod]( V-1 )
-    • Adjust solidify modifier
+    [Solidify-Mod]( V-1 )
+        • Adjust solidify modifier
 
-[Modifier-Sort]( V-1 )
-    • Run sort util on selected meshes
+    [Modifier-Sort]( V-1 )
+        • Run sort util on selected meshes
 
-[Modifier-Apply]( V-1 )
-    • Various options for applying modifiers
+    [Modifier-Apply]( V-1 )
+        • Various options for applying modifiers
 
-[Booleans]( V-1 )
-    • Intersect | Difference | Union | Slice
-    *V2*
-        - Knife -> Use as cutting kinfe at intersection
-        - Inset -> (Make mesh from intersection planes, add solidify)
-    *V3*
-        - Trim  -> Add beveled transition mesh
-        - Curve -> Make curves from intersection edges
+    [Booleans]( V-1 )
+        • Intersect | Difference | Union | Slice
+        *V2*
+            - Knife -> Use as cutting kinfe at intersection
+            - Inset -> (Make mesh from intersection planes, add solidify)
+        *V3*
+            - Trim  -> Add beveled transition mesh
+            - Curve -> Make curves from intersection edges
 
-[Lattice]( X )
-    • Adjust lattice modifier
+    [Lattice]( X )
+        • Adjust lattice modifier
 
-[Array]( X )
-    • 3D placement widget to set the location of the array
+    [Array]( X )
+        • 3D placement widget to set the location of the array
 
-[Radial-Array]( X )
-    • Radial 2D screen widget to control the geo-nodes based setup
+    [Radial-Array]( X )
+        • Radial 2D screen widget to control the geo-nodes based setup
 
-[Cloth-Sim]( X )
-    • Fabric simulator from selected geoemtry
+    [Cloth-Sim]( X )
+        • Fabric simulator from selected geoemtry
 
 # -------------------- MATERIAL -------------------- #
 
-[Quick-Mat]( X )
-    • Assign generic materials from assets to selected objects allow for randimization
+    [Quick-Mat]( X )
+        • Assign generic materials from assets to selected objects allow for randimization
 
-[Mat-Flood]( X )
-    • Assign selected material to objects removing previous materials
+    [Mat-Flood]( X )
+        • Assign selected material to objects removing previous materials
 
-[Grunge-Map]( X )
-    • Assign a grung map texture to the active object allowing for material selection and rgba mixing with previous roughness value
+    [Grunge-Map]( X )
+        • Assign a grung map texture to the active object allowing for material selection and rgba mixing with previous roughness value
 
-[Mat-HSL]( X )
-    • Assign a HSL setup before the diffuse color is used to allow adjusting many material colors at once
+    [Mat-HSL]( X )
+        • Assign a HSL setup before the diffuse color is used to allow adjusting many material colors at once
 
-[Gradient-Color]( X )
-    • Assign a color blend node based on Z axis of world or object
+    [Gradient-Color]( X )
+        • Assign a color blend node based on Z axis of world or object
 
-[Decal]( X )
-    • Create decals by raycasting into the scene and createing a UV Projector and then adding that decal to the material on that UV
+    [Decal]( X )
+        • Create decals by raycasting into the scene and createing a UV Projector and then adding that decal to the material on that UV
 
-[Mask-Builder]( X )
-    • Live bakes a mask map based on AO, Grunge, Curvature
+    [Mask-Builder]( X )
+        • Live bakes a mask map based on AO, Grunge, Curvature
 
 # -------------------- RENDER & LIGHTS -------------------- #
 
-[EEVEE-Setup]( V-1 )
-    • Setup EEVEE
+    [EEVEE-Setup]( V-1 )
+        • Setup EEVEE
 
-[Cycles-Setup]( V-1 )
-    • Setup Cycles
+    [Cycles-Setup]( V-1 )
+        • Setup Cycles
 
-[Workbench-Setup]( V-1 )
-    • Setup Workbench
-    *V2*
-        - Match the settings to the viewport or vise versa
+    [Workbench-Setup]( V-1 )
+        • Setup Workbench
+        *V2*
+            - Match the settings to the viewport or vise versa
 
-[Bloom]( X )
-    • (Enable / Disable) Compositor with Glare set to bloom (Settings for props)
+    [Bloom]( X )
+        • (Enable / Disable) Compositor with Glare set to bloom (Settings for props)
 
-[Quick-Lights]( X )
-    • Add random light setups allowing for JSON file saves
+    [Quick-Lights]( X )
+        • Add random light setups allowing for JSON file saves
 
-[LOD-Manager]( X )
-    • Props collection for LOD group with camera distance
+    [LOD-Manager]( X )
+        • Props collection for LOD group with camera distance
 
-[ID-Render]( X )
-    • Custom renderer that uses the Viewport display colors from materials
+    [ID-Render]( X )
+        • Custom renderer that uses the Viewport display colors from materials
 
-[Atmosphere]( X )
-    • Adjust clouds and fog for world or volumes
+    [Atmosphere]( X )
+        • Adjust clouds and fog for world or volumes
 
-[Sky]( X )
-    • Adds HDRI sky or procedural
+    [Sky]( X )
+        • Adds HDRI sky or procedural
 
-[Turn-Table]( X )
-    • Adds a quick turn table base with settings
+    [Turn-Table]( X )
+        • Adds a quick turn table base with settings
 
 # -------------------- GENERATORS & EFFECTS -------------------- #
 
-[Snow]( X )
-    • Click drag to draw snow
-        - Multi ray cast to add points and build mesh from
+    [Snow]( X )
+        • Click drag to draw snow
+            - Multi ray cast to add points and build mesh from
 
-[Wrap-It]( X )
-    • Create an aligned box around selection and allow for spiral projection from that box onto geo underneath adding tape width
+    [Wrap-It]( X )
+        • Create an aligned box around selection and allow for spiral projection from that box onto geo underneath adding tape width
 
-[Tape-It]( X )
-    • Drag mouse across objects and create a mesh that wraps around them
+    [Tape-It]( X )
+        • Drag mouse across objects and create a mesh that wraps around them
 
-[Fracture]( X )
-    • Breaks geomtry based on 3d noise algo
+    [Fracture]( X )
+        • Breaks geomtry based on 3d noise algo
 
-[Chip]( X )
-    • Edge chipping booleans
+    [Chip]( X )
+        • Edge chipping booleans
 
-[Shotgun]( X )
-    • Modal to click on mesh and apply random damage
+    [Shotgun]( X )
+        • Modal to click on mesh and apply random damage
 
-[Greeble-Editor]( X )
-    • Cables | Windows | Pads | Panels | Antennas
+    [Greeble-Editor]( X )
+        • Cables | Windows | Pads | Panels | Antennas
 
-[Erode]( X )
-    • Clicking on mesh will add particles that have downward gravity and cuts into the mesh
+    [Erode]( X )
+        • Clicking on mesh will add particles that have downward gravity and cuts into the mesh
 
-[Rocks-Gen]( X )
-    • Adds procedural rocks with formation types
+    [Rocks-Gen]( X )
+        • Adds procedural rocks with formation types
 
-[Bricks-Gen]( X )
-    • Adds procedural brick walls by drawing on the grid floor
+    [Bricks-Gen]( X )
+        • Adds procedural brick walls by drawing on the grid floor
 
-[Grass-Gen]( X )
-    • Adds procedural grass
+    [Grass-Gen]( X )
+        • Adds procedural grass
 
-[Tree-Gen]( X )
-    • Adds procedural trees
+    [Tree-Gen]( X )
+        • Adds procedural trees
 
-[Ivy-Gen]( X )
-    • Adds procedural ivy
+    [Ivy-Gen]( X )
+        • Adds procedural ivy
 
-[Terrain-Gen]( X )
-    • Adds procedural terrain
+    [Terrain-Gen]( X )
+        • Adds procedural terrain
 
-[Terrain-Editor]( X )
-    • With a terrain object selected allow for adding features with tool selection and raycasting
-    • Erosion | Rivers | Lakes | Oceans | Scatter
+    [Terrain-Editor]( X )
+        • With a terrain object selected allow for adding features with tool selection and raycasting
+        • Erosion | Rivers | Lakes | Oceans | Scatter
 
-[Physics-Active]( X )
-    • Add physics with rigidbody and mesh collision
+    [Physics-Active]( X )
+        • Add physics with rigidbody and mesh collision
 
-[Physics-Passive]( X )
-    • Add mesh collision
+    [Physics-Passive]( X )
+        • Add mesh collision
 
-[Physics-Apply]( X )
-    • Apply physics settings
+    [Physics-Apply]( X )
+        • Apply physics settings
 
-[Auto-Ray]( X )
-    • Adds empty single arrow to object by BB face selection and will now raycast on frame change moving to location (uses parent child)
+    [Auto-Ray]( X )
+        • Adds empty single arrow to object by BB face selection and will now raycast on frame change moving to location (uses parent child)
 
-[Cloth-Design]( X )
-    • Draw out curve patches on a model and allow for point simulations within the patches
+    [Cloth-Design]( X )
+        • Draw out curve patches on a model and allow for point simulations within the patches
 
 # -------------------- GEOMETRY NODES -------------------- #
 
-[Hot-Bar]( X )
-    • Adds a hot bar along the top of the window for the node categories
+    [Hot-Bar]( X )
+        • Adds a hot bar along the top of the window for the node categories
 
 # -------------------- UV -------------------- #
 
-[UV-Straighten]( X )
-    • Take UV Island and from longest or shortest edge boundary chain straighten
+    [UV-Straighten]( X )
+        • Take UV Island and from longest or shortest edge boundary chain straighten
 
-[UV-Project]( X )
-    • Place markers in 3D view with mesh selections assign and allow for 3D view unwrap projections
+    [UV-Project]( X )
+        • Place markers in 3D view with mesh selections assign and allow for 3D view unwrap projections
 
-[UV-Island-Stack]( X )
-    • Stack similar UVs
+    [UV-Island-Stack]( X )
+        • Stack similar UVs
 
-[UV-Display]( X )
-    • Display UVs in 3D view (2D Window / 3D Layout)
+    [UV-Display]( X )
+        • Display UVs in 3D view (2D Window / 3D Layout)
 
-[UV-Distortion-Solver]( X )
-    • Iteratevely flatten a UV island based on distortion map
-    • For each UV, create a map for each corner and its distortion percent
+    [UV-Distortion-Solver]( X )
+        • Iteratevely flatten a UV island based on distortion map
+        • For each UV, create a map for each corner and its distortion percent
 
 # -------------------- CURVE -------------------- #
 
-[To-Curve]( V-1 )
-    • From selection assign curves to edges
-    *V2*
-    - Allow for longest path algo
-    - Allow for face offset so curves float about surfaces and extrude down to the end verts with transition bevel options
-    - Modal Menu
-        - Shape / Type / Fill / Offset from mesh
+    [To-Curve]( V-1 )
+        • From selection assign curves to edges
+        *V2*
+        - Allow for longest path algo
+        - Allow for face offset so curves float about surfaces and extrude down to the end verts with transition bevel options
+        - Modal Menu
+            - Shape / Type / Fill / Offset from mesh
 
-[Adjust-Curve]( V-1 )
-    • Adjust the parameters of the selected curves
-    *V2*
-    - Create mesh duplicate on exit
+    [Adjust-Curve]( V-1 )
+        • Adjust the parameters of the selected curves
+        *V2*
+        - Create mesh duplicate on exit
 
-[Curve-Span]( X )
-    • Select Curve segments and allow dragging chain ends along Curve to fan out the bevel
+    [Curve-Span]( X )
+        • Select Curve segments and allow dragging chain ends along Curve to fan out the bevel
 
-[Curve-Bevel]( X )
-    • Select curve segments and allow rebevel
+    [Curve-Bevel]( X )
+        • Select curve segments and allow rebevel
 
-[Patches]( X )
-    • Bezier patches that can be snapped together and converted to mesh
-    • Save / Load JSON files
+    [Patches]( X )
+        • Bezier patches that can be snapped together and converted to mesh
+        • Save / Load JSON files
 
-[Cables]( X )
-    • Click two points to create cables allowing for physics and presets
+    [Cables]( X )
+        • Click two points to create cables allowing for physics and presets
 
-[Curve-Caps]( X )
-    • Assign start and end caps to selected curves
+    [Curve-Caps]( X )
+        • Assign start and end caps to selected curves
 
 # -------------------- SCULPT -------------------- #
 
-[Sculpt-Transform]( X )
-    • A gizmo that places at the cursor click location and moves geo
+    [Sculpt-Transform]( X )
+        • A gizmo that places at the cursor click location and moves geo
 
-[Hop-To-Sculpt]( X )
-    • Go to Sculpt mode with grab brush set
-    • + SHIFT -> Mirror X
-    • + CTRL -> Remesh
-    • + ALT -> Add Mask to selected Verts
+    [Hop-To-Sculpt]( X )
+        • Go to Sculpt mode with grab brush set
+        • + SHIFT -> Mirror X
+        • + CTRL -> Remesh
+        • + ALT -> Add Mask to selected Verts
 
 # -------------------- GIZMOS -------------------- #
 
-[Edit-Mesh-Gizmos-HUD]( V-1 )
-    • Display Gizmo Icons
-    • Adjust Modal
-    • Shit + Alt + D (Toggle HUD)
+    [Edit-Mesh-Gizmos-HUD]( V-1 )
+        • Display Gizmo Icons
+        • Adjust Modal
+        • Shit + Alt + D (Toggle HUD)
 
 # -------------------- EXTERNAL -------------------- #
 
-[Octane]( X )
-    • Support preset settings for Octane Blender and Octane Standalone
+    [Octane]( X )
+        • Support preset settings for Octane Blender and Octane Standalone
 
-[Unity]( X )
-    • Export as FBX, OBJ, Blend
-    • Batch export per object (Adjusting scale and so on)
+    [Unity]( X )
+        • Export as FBX, OBJ, Blend
+        • Batch export per object (Adjusting scale and so on)
 
 # -------------------- GREASE PENCIL -------------------- #
 
-[Draw]
-    - Static Op that sets up a quick drawing enviroment
+    [Draw]
+        - Static Op that sets up a quick drawing enviroment
 
 # -------------------- ARCADE ------------------- #
 
-[Engine]( X )
-    • States
-        - Intro
-            Divide screen into grid and then turn each block black one at a time
-        - Game
-            Score board at top like RL
-        - Outtro
-            From the center of the screen make small rectangles that fade out getting larger revealing the 3D view
+    [Engine]( X )
+        • States
+            - Intro
+                Divide screen into grid and then turn each block black one at a time
+            - Game
+                Score board at top like RL
+            - Outtro
+                From the center of the screen make small rectangles that fade out getting larger revealing the 3D view
 
-[Pong]( X )
-    • Add Pong Game
+    [Pong]( X )
+        • Add Pong Game
 
-[Snake]( X )
-    • Add Snake Game
+    [Snake]( X )
+        • Add Snake Game
 
-[Astriods]( X )
-    • Add Astriods Game
+    [Astriods]( X )
+        • Add Astriods Game
 
 # -------------------- ACTIVE TOOLS -------------------- #
 
-[Razor]
-    • 3D Surface Drawing System with Workplanes
+    [Razor]
+        • 3D Surface Drawing System with Workplanes
