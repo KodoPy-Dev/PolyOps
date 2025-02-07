@@ -8,17 +8,14 @@
 
 # -------------------- TODO -------------------- #
 
-    [Razor]
-        Redesign
+YouTube
+    - Create PolyOps Demo Video
+    - Create PolyOps Version 1.0 Docs
 
-    [YouTube|Gumroad]
-        Gumroad PolyOps Banner
-            - Images should be horizontal, at least 1280x720px, and 72 DPI (dots per inch).
-        Logo
-            - KodoPy | PolyOps
-        PolyOps
-            - Single video with timestamps
-            - Publish to GM
+Gumroad
+    - Content Description
+    - Banner (1280 x 720px 72 DPI)
+    - Thumbnail (600 x 600)
 
 # -------------------- R&D -------------------- #
 
