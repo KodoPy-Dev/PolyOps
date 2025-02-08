@@ -4,6 +4,6 @@ YouTube Channel.
 
 https://www.youtube.com/@KodoPy
 
-If you wish to support my work you can buy an appreciation token.
+Support me!
 
 https://kodopy.gumroad.com/l/token
