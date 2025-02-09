@@ -72,7 +72,7 @@ Stay tuned for updates, tutorials, etcetera on my YouTube channel.<br />
 [YouTube](https://www.youtube.com/@KodoPy) 
 
 This addon is open source and can be downloaded from my GitHub account.<br />
-[Download](https://github.com/KodoPy-Dev/PolyOps/releases)
+[Download](https://github.com/KodoPy-Dev/PolyOps)
 
 Support me if you would like, every bit helps!<br />
 [Appreciation Token](https://kodopy.gumroad.com/l/token)
