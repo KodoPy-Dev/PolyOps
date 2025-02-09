@@ -154,7 +154,8 @@ def draw_info(context, layout, prefs):
     web_box.label(text="Web Pages", icon='WORLD')
     web_pages = [
         ("YouTube", "https://www.youtube.com/@KodoPy"),
-        ("GumRoad", "https://kodopy.gumroad.com/l/PolyOps"),
+        ("Support Me", "https://kodopy.gumroad.com/l/token"),
+        ("GitHub", "https://github.com/KodoPy-Dev/PolyOps"),
     ]
     for page_name, page_link in web_pages:
         row = web_box.row(align=True)

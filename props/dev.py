@@ -8,7 +8,7 @@ from bpy.props import BoolProperty, FloatProperty, EnumProperty, IntProperty
 
 
 class PS_PROPS_Dev(PropertyGroup):
-    debug_mode : BoolProperty(name="Debug Mode", default=True)
+    debug_mode : BoolProperty(name="Debug Mode", default=False)
     data_write_type_opts = (
         ('VERTS_INDICES_JS', "VERTS_INDICES_JS", ""),
         ('VERTS_INDICES_PY', "VERTS_INDICES_PY", ""),
