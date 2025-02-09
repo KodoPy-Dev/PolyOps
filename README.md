@@ -68,14 +68,16 @@ Another notable area is under the "Info" tab, here you can see all the hot keys 
 
 <br />
 
-Stay tuned for updates, tutorials, etcetera on my YouTube channel.
+Stay tuned for updates, tutorials, etcetera on my YouTube channel.<br />
 [YouTube](https://www.youtube.com/@KodoPy) 
 
-This addon is open source and can be downloaded from my GitHub account.
+This addon is open source and can be downloaded from my GitHub account.<br />
 [Download](https://github.com/KodoPy-Dev/PolyOps/releases)
 
-Support me if you would like, every bit helps!
+Support me if you would like, every bit helps!<br />
 [Appreciation Token](https://kodopy.gumroad.com/l/token)
+
+<br />
 
 Thanks for checking out the project and I hope you enjoy,
 KodoPy
