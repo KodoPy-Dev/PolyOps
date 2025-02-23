@@ -81,8 +81,6 @@ def init(
                 color_b = color_a
             else:
                 color_b = (1,1,1)
-
-
         data.color_a = Vector((color_a[0], color_a[1], color_a[2]))
         data.color_b = Vector((color_b[0], color_b[1], color_b[2]))
 
