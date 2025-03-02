@@ -13,13 +13,7 @@ from mathutils.geometry import distance_point_to_plane
 ########################•########################
 
 def screen_factor():
-    prefs = bpy.context.preferences.system
-    dpi = prefs.dpi
-    ui_scale = prefs.ui_scale
-    pixel_size = prefs.pixel_size
-    ui_line_width = prefs.ui_line_width
-    scale_factor = (dpi * ui_scale / 72) * pixel_size
-    return scale_factor / ui_line_width
+    return bpy.context.preferences.system.ui_scale
 
 
 def depth_factor_from_clip_extents(context, point_3d):

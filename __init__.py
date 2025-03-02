@@ -6,7 +6,7 @@ bl_info = {
     "name": "PolyOps",
     "description": "Blender Workflow Utilities",
     "author": "KodoPy",
-    "version": (1, 0),
+    "version": (1, 0, 0),
     "blender": (4, 3, 2),
     "location": "View3D",
     "category": "3D View"
