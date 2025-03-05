@@ -3,7 +3,7 @@ There are many tools to explore but check below for a few samples and everything
 
 And **yes** this addon is **free**, however if you enjoy the product or any other content I release please consider getting an appreciation token from my GumRoad page (Link at the bottom).
 
-I'm currently working on the YouTube Channel, stay tuned for videos.
+[![Watch the video](https://img.youtube.com/vi/VCJxMvnzajM/maxresdefault.jpg)](https://youtu.be/VCJxMvnzajM)
 
 *Slice & Knife* <br />
 Cut mesh geometry with a simple 2-Point line.
